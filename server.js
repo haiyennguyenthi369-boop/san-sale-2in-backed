@@ -84,9 +84,7 @@ try {
       });
     }
 
-    const affiliateUrl =
-  data?.data?.results?.[0]?.link ||
-  data?.data?.results?.[0]?.shortUrl;
+   const affiliateUrl = data?.data?.results?.[0]?.link;
 
     if (!affiliateUrl) {
       return res.status(500).json({
