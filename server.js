@@ -10,7 +10,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://san-sale-cung-2in.vercel.app",
+      "https://san-sale-2in-frontend.vercel.app",,
     ],
   })
 );
@@ -108,6 +108,4 @@ try {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`SĂN SALE CÙNG 2IN backend chạy tại http://localhost:${PORT}`);
-});
+export default app;
